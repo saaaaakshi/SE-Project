@@ -54,44 +54,6 @@
     color: var(--bg-black-100);
 
 }
-
- /* .logo a::before{
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border-bottom: 5px solid var(--bg-black-100);
-    border-left : 5px solid var(--bg-black-100);
-    bottom:  0.5rem;
-    left:  0.5rem; 
-}
- .logo a::after {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border-top: 5px solid var(--bg-black-100);
-    border-right : 5px solid var(--bg-black-100);
-    top: 0.5rem;
-    right: 0.5rem; 
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     .container {
         position: relative;
         width: 100%;
@@ -101,8 +63,9 @@
         position: fixed;
         width: 300px;
         height: 100%;
-        background: var(--skin-color);
-        border-left: 10px solid var(--skin-color);
+        background: linear-gradient(to bottom,var(--skin-color),var(--bg--black-900));
+        /* border-left: 10px solid var(--skin-color); */
+        border-left: 10px solid transparent;
         transition: 0.5s;
         overflow: hidden;
         /* overflow-y: scroll; */
@@ -145,7 +108,6 @@
         display: flex;
         text-decoration: none;
         color:var(--bg-black-100);
-        /* color: var(--white); */
     }
     
     .navigation ul li:hover a,
@@ -282,169 +244,9 @@
         object-fit: cover;
     }
     
-    .cardBox {
-        position: relative;
-        width: 100%;
-        padding: 20px;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 30px;
-    }
+   
     
-    .cardBox .card {
-        position: relative;
-        background: var( --bg--black-900);
-        padding: 30px;
-        border-radius: 20px;
-        display: flex;
-        justify-content: space-between;
-        cursor: pointer;
-        box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
-    }
-    
-    .cardBox .card .numbers {
-        position: relative;
-        font-weight: 500;
-        font-size: 2.5em;
-        color: var(--skin-color);
-    }
-    
-    .cardBox .card .cardName {
-        color: var(--black2);
-        font-size: 1.1em;
-        margin-top: 5px;
-    }
-    
-    .cardBox .card .iconBx {
-        font-size: 3.5em;
-        color: var(--black2);
-    }
-    
-    .cardBox .card:hover {
-        background: var(--skin-color);
-    }
-    
-    .cardBox .card:hover .numbers,
-    .cardBox .card:hover .cardName,
-    .cardBox .card:hover .iconBx {
-        color: var(--white);
-    }
-    
-    .details {
-        position: relative;
-        width: 100%;
-        padding: 20px;
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        grid-gap: 30px;
-        /* margin-top: 10px; */
-    }
-    
-    .details .recentOrders {
-        position: relative;
-        display: grid;
-        min-height: 500px;
-        background: var(--white);
-        padding: 20px;
-        box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
-        border-radius: 20px;
-    }
-    
-    .cardHeader {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-    
-    .cardHeader h2 {
-        font-weight: 600;
-        color: var(--skin-color);
-    }
-    
-    .btn {
-        position: relative;
-        padding: 5px 10px;
-        background: var(--skin-color);
-        text-decoration: none;
-        color: var(--white);
-        border-radius: 6px;
-    }
-    
-    .details table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 10px;
-    }
-    
-    .details table thead td {
-        font-weight: 600;
-    }
-    
-    .details .recentOrders table tr {
-        color: var(--black1);
-        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    }
-    
-    .details .recentOrders table tr:last-child {
-        border-bottom: none;
-    }
-    
-    .details .recentOrders table tbody tr:hover {
-        background: var(--skin-color);
-        color: var(--white);
-    }
-    
-    .details .recentOrders table tr td {
-        padding: 10px;
-    }
-    
-    .details .recentOrders table tr td:last-child {
-        text-align: end;
-    }
-    
-    .details .recentOrders table tr td:nth-child(2) {
-        text-align: end;
-    }
-    
-    .details .recentOrders table tr td:nth-child(3) {
-        text-align: center;
-    }
-    
-    .status.delivered {
-        padding: 2px 4px;
-        background: #8de02c;
-        color: var(--white);
-        border-radius: 4px;
-        font-size: 14px;
-        font-weight: 500;
-    }
-    
-    .status.pending {
-        padding: 2px 4px;
-        background: #f9ca3f;
-        color: var(--white);
-        border-radius: 4px;
-        font-size: 14px;
-        font-weight: 500;
-    }
-    
-    .status.return {
-        padding: 2px 4px;
-        background: #f00;
-        color: var(--white);
-        border-radius: 4px;
-        font-size: 14px;
-        font-weight: 500;
-    }
-    
-    .status.inprogress {
-        padding: 2px 4px;
-        background: #1795ce;
-        color: var(--white);
-        border-radius: 4px;
-        font-size: 14px;
-        font-weight: 500;
-    }
+  
     .style-switcher{
         position: fixed;
         right:0;
@@ -539,7 +341,7 @@
         left: 0;
         bottom: 0;
         width: 100%;
-        background: var(--skin-color);
+        background: linear-gradient(to right,var(--bg--black-900),var(--skin-color),var(--bg--black-900));
         color:var(--bg-black-100);
         text-align: center;
         /* margin-top: 20px; */
@@ -550,80 +352,109 @@
         letter-spacing: 0.2em;
         word-spacing: 0.1em;
         font-size: 20px;
-    }  
-    .recentCustomers {
-        position: relative;
-        display: grid;
-        min-height: 500px;
-        padding: 20px;
-        background: var(--white);
-        box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
-        border-radius: 20px;
-    }
+    } 
     
-    .recentCustomers .imgBx {
-        position: relative;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        overflow: hidden;
-    }
+.wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    height: 60%;
+    display: flex;
+    box-shadow: 0 1px 20px 0 rgba(69,90,100,.08);
+  }
+  
+  .wrapper .left{
+    width: 35%;
+    background: linear-gradient(to right,var(--skin-color),var(--bg--black-900));
+    padding: 30px 25px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .wrapper .left img{
+    border-radius: 5px;
+    margin-bottom: 10px;
     
-    .recentCustomers .imgBx img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    
-    .recentCustomers table tr td {
-        padding: 12px 10px;
-    }
-    
-    .recentCustomers table tr td h4 {
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 1.2em;
-    }
-    
-    .recentCustomers table tr td h4 span {
-        font-size: 14px;
-        color: var(--black2);
-    }
-    
-    .recentCustomers table tr:hover {
-        background: var(--skin-color);
-        color: var(--white);
-    }
-    
-    .recentCustomers table tr:hover td h4 span {
-        color: var(--white);
-    }
-    /* responsive design */
-    
-
-
-    @media (max-width: 991px) {
-        .navigation {
-            left: -300px;
-        }
-        .navigation.active {
-            width: 300px;
-            left: 0;
-        }
-        .main {
-            width: 100%;
-            left: 0;
-        }
-        .main.active {
-            left: 300px;
-        }
-        .cardBox {
-            grid-template-columns: repeat(2, 1fr);
-        }
-    }
+  }
+  
+  .wrapper .left h4{
+    margin-bottom: 10px;
+  }
+  
+  .wrapper .left p{
+    font-size: 12px;
+  }
+  
+  .wrapper .right{
+    width: 65%;
+    background: #fff;
+    padding: 30px 25px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  .wrapper .right .info,
+  .wrapper .right .projects{
+    margin-bottom: 25px;
+  }
+  
+  .wrapper .right .info h3,
+  .wrapper .right .projects h3{
+      margin-bottom: 15px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #e0e0e0;
+      color: #353c4e;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+  
+  .wrapper .right .info_data,
+  .wrapper .right .projects_data{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .wrapper .right .info_data .data,
+  .wrapper .right .projects_data .data{
+    width: 45%;
+  }
+  
+  .wrapper .right .info_data .data h4,
+  .wrapper .right .projects_data .data h4{
+      color: #353c4e;
+      margin-bottom: 5px;
+  }
+  
+  .wrapper .right .info_data .data p,
+  .wrapper .right .projects_data .data p{
+    font-size: 13px;
+    margin-bottom: 10px;
+    color: #919aa3;
+  }
+  
+  .wrapper .social_media ul{
+    display: flex;
+  }
+  
+  .wrapper .social_media ul li{
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(to right,var(--skin-color),var(--bg--black-900));
+    margin-right: 10px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 45px;
+  }
+  
+  .wrapper .social_media ul li a{
+    /* color :#fff; */
+    display: block;
+    font-size: 18px;
+  }
     
     @media (max-width: 768px) {
         .details {
