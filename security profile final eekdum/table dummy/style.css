@@ -42,7 +42,7 @@
     align-items: center;
     align-items: baseline;
     padding-top: 2rem;
-    padding-right: 2rem;
+    padding-right: 1rem;
 }
 
     
@@ -637,7 +637,23 @@
         /* color:var(--text-black-700); */
     }
     /* responsive design */
-    
+    .footer {
+        position:fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background: var(--skin-color);
+        color:var(--bg-black-100);
+        text-align: center;
+        /* margin-top: 20px; */
+        font-family: 'Times New Roman', sans-serif;
+        padding: 0.02px;
+        padding: 0.1em;
+        transform: background 0.4s;
+        letter-spacing: 0.2em;
+        word-spacing: 0.1em;
+        font-size: 20px;
+    }  
 
 
     @media (max-width: 991px) {

@@ -105,7 +105,7 @@
         border-left: 10px solid var(--skin-color);
         transition: 0.5s;
         overflow: hidden;
-        overflow-y: scroll;
+        /* overflow-y: scroll; */
     }
     
     .navigation.active {
@@ -534,7 +534,23 @@
     background: #f021b2;
         border: 1px solid #f021b2;
     }
-    
+    .footer {
+        position:fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background: var(--skin-color);
+        color:var(--bg-black-100);
+        text-align: center;
+        /* margin-top: 20px; */
+        font-family: 'Times New Roman', sans-serif;
+        padding: 0.02px;
+        padding: 0.1em;
+        transform: background 0.4s;
+        letter-spacing: 0.2em;
+        word-spacing: 0.1em;
+        font-size: 20px;
+    }  
     .recentCustomers {
         position: relative;
         display: grid;
