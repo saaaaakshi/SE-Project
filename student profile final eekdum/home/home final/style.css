@@ -194,7 +194,9 @@
         justify-content: space-between;
         align-items: center;
         padding: 0 10px;
-        background: var(--skin-color);
+        /* background: var(--skin-color); */
+        background: linear-gradient(to right,var(--bg--black-900),var(--skin-color),var(--bg--black-900));
+
     }
     .heading{
         position: relative;
@@ -336,30 +338,18 @@
     background: #f021b2;
         border: 1px solid #f021b2;
     }
-    .footer {
-        position:fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        background: linear-gradient(to right,var(--bg--black-900),var(--skin-color),var(--bg--black-900));
-        color:var(--bg-black-100);
-        text-align: center;
-        /* margin-top: 20px; */
-        font-family: 'Times New Roman', sans-serif;
-        padding: 0.02px;
-        padding: 0.1em;
-        transform: background 0.4s;
-        letter-spacing: 0.2em;
-        word-spacing: 0.1em;
-        font-size: 20px;
-    } 
-    
-.wrapper{
-    position: absolute;
-    top: 50%;
+
+
+
+
+
+    /* wrapper has the profile card */
+    .wrapper{
+        position: absolute;
+        top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 50%;
+    width: 80%;
     height: 60%;
     display: flex;
     box-shadow: 0 1px 20px 0 rgba(69,90,100,.08);
@@ -369,6 +359,7 @@
     width: 35%;
     background: linear-gradient(to right,var(--skin-color),var(--bg--black-900));
     padding: 30px 25px;
+    /* padding: 50px 55px; */
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     text-align: center;
@@ -377,6 +368,10 @@
   
   .wrapper .left img{
     border-radius: 5px;
+    padding-right: 1.5rem;
+    padding-left: 1rem;
+    width: 19rem;
+    height: 20rem;
     margin-bottom: 10px;
     
   }
@@ -420,10 +415,10 @@
   
   .wrapper .right .info_data .data,
   .wrapper .right .projects_data .data{
-    width: 45%;
-  }
+      width: 45%;
+    }
   
-  .wrapper .right .info_data .data h4,
+    .wrapper .right .info_data .data h4,
   .wrapper .right .projects_data .data h4{
       color: #353c4e;
       margin-bottom: 5px;
@@ -431,7 +426,7 @@
   
   .wrapper .right .info_data .data p,
   .wrapper .right .projects_data .data p{
-    font-size: 13px;
+      font-size: 13px;
     margin-bottom: 10px;
     color: #919aa3;
   }
@@ -455,7 +450,25 @@
     display: block;
     font-size: 18px;
   }
-    
+    /* footer code */
+  .footer {
+      position:fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background: linear-gradient(to right,var(--bg--black-900),var(--skin-color),var(--bg--black-900));
+      color:var(--bg-black-100);
+      text-align: center;
+      /* margin-top: 20px; */
+      font-family: 'Times New Roman', sans-serif;
+      padding: 0.02px;
+      padding: 0.1em;
+      transform: background 0.4s;
+      letter-spacing: 0.2em;
+      word-spacing: 0.1em;
+      font-size: 20px;
+  } 
+  
     @media (max-width: 768px) {
         .details {
             grid-template-columns: repeat(1, 1fr);
