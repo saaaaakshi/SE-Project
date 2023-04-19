@@ -682,7 +682,10 @@
             grid-template-columns: repeat(2, 1fr);
         }
     }
-    
+    .center-form{
+        display: flex;
+        justify-content: center;
+    }
     @media (max-width: 768px) {
         .details {
             grid-template-columns: repeat(1, 1fr);
