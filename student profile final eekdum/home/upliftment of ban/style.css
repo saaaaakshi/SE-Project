@@ -663,6 +663,10 @@
         padding-bottom: 2px;
         color:var(--skin-color);
     }
+    .center-form{
+        display: flex;
+        justify-content: center;
+    }
     @media (max-width: 991px) {
         .navigation {
             left: -300px;
@@ -681,10 +685,6 @@
         .cardBox {
             grid-template-columns: repeat(2, 1fr);
         }
-    }
-    .center-form{
-        display: flex;
-        justify-content: center;
     }
     @media (max-width: 768px) {
         .details {
